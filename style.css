@@ -1,0 +1,151 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+alignright {
+    float: right;
+    margin-left: 15px;
+}
+aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], textarea {
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+input[type="submit"], button[type="submit"] {
+    border: medium none;
+    color: #fff;
+    margin: 0;
+    padding: 15px 30px;
+    width: auto;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    font-family: 'Changa One', cursive;
+}    
+body {
+    font-family: 'Changa One', cursive;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.section-text, .ection-text-pade {
+    padding: 70px 0;
+}
+.ection-text-pade {
+    position: relative;
+}
+.section-padding {
+    padding: 80px 0;
+}
+.single-promo-box {
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.promo-bg-01 {background-image: url(img/food-image-01.jpg);}
+.promo-bg-02 {background-image: url(img/food-image-02.jpg);}
+.promo-bg-03 {background-image: url(img/food-image-03.jpg);}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-image: linear-gradient(to bottom, #28150a00, #28150a00, #28150a00, #000);
+    color: #fff;
+}
+
+
+
+
+a.single-promo-box {
+    color: #fff;
+    display: block;
+    height: 280px;
+    position: relative;
+    transition: .3s;
+}
+.promo-content {
+    bottom: 10px;
+    font-size: 18px;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transition: .3s;
+}
+.promo-content h2 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+a.single-promo-box:hover .promo-content {
+    bottom: 20px;
+}
+a.single-promo-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #888;
+}
+
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+.scrollToTop a {
+    background-color: #faac2d;
+    border-radius: 50px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 390px;
+    width: 50px;
+    transition: .3s;
+}
+.scrollToTop a:hover {
+    background-color: #fff;
+    color: #faac2d;
+    border: 1px solid #faac2d;
+    box-shadow: 0 0 10px #000;
+}
